@@ -1,0 +1,7 @@
+# Do not upload these to Vercel
+node_modules
+.git
+.next/cache
+*.log
+*.psd
+*.zip
