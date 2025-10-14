@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-dark: #0A2342;
+  --color-primary: #185ADB;
+  --color-light: #BFD7ED;
+  --color-graybg: #F5F7FA;
+}
+
+html, body {
+  @apply bg-[var(--color-graybg)] text-[var(--color-dark)];
+}
