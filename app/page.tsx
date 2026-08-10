@@ -35,7 +35,7 @@ import {
   MapPinned,
 } from "lucide-react";
 
-type Language = "en" | "es";
+type Language = "en" | "es";  
 
 type PortfolioItem = {
   image: string;
