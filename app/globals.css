@@ -3,12 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --color-dark: #0A2342;
-  --color-primary: #185ADB;
-  --color-light: #BFD7ED;
-  --color-graybg: #F5F7FA;
+  --color-dark: #0f172a;
+  --color-primary: #0284c7;
+  --color-light: #e2e8f0;
+  --color-graybg: #f8fafc;
 }
 
-html, body {
-  @apply bg-[var(--color-graybg)] text-[var(--color-dark)];
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-graybg);
+  color: var(--color-dark);
 }
