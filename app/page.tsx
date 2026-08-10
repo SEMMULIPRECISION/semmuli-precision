@@ -1,3 +1,4 @@
+```
 "use client";
 
 import Image from "next/image";
@@ -415,7 +416,7 @@ export default function Page() {
 
         <div className="relative z-10 w-full max-w-3xl text-center">
           <div className="mx-auto max-w-xl rounded-3xl border border-sky-500/30 bg-[#031426]/90 p-6 shadow-2xl backdrop-blur">
-            <Image src="/semmuli-logo.png" alt="SEMMULI Precision" width={900} height={600} priority className="mx-auto h-auto w-full max-w-md" />
+            <Image src="/logo-semmuli-horizontal.png" alt="SEMMULI Precision" width={900} height={600} priority className="mx-auto h-auto w-full max-w-md" />
           </div>
 
           <p className="mt-8 text-xs md:text-sm tracking-[0.28em] text-sky-400 font-bold">
@@ -460,7 +461,7 @@ export default function Page() {
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex min-h-[88px] max-w-[1500px] items-center justify-between px-5 md:px-10">
           <a href="#home">
-            <Image src="/semmuli-logo.png" alt="SEMMULI Precision" width={430} height={260} priority className="h-[72px] w-auto object-contain" />
+            <Image src="/logo-semmuli-horizontal.png" alt="SEMMULI Precision" width={430} height={260} priority className="h-[72px] w-auto object-contain" />
           </a>
 
           <nav className="hidden xl:flex items-center gap-8 text-sm font-bold">
@@ -534,7 +535,7 @@ export default function Page() {
           <div className="relative z-10 lg:ml-auto w-full max-w-2xl">
             <div className="rounded-3xl border border-sky-400/35 bg-[#021326]/90 shadow-2xl backdrop-blur overflow-hidden">
               <div className="px-7 pt-6 pb-5">
-                <Image src="/semmuli-logo.png" alt="SEMMULI Precision" width={800} height={520} className="mx-auto h-auto w-full max-w-[500px]" />
+                <Image src="/logo-semmuli-horizontal.png" alt="SEMMULI Precision" width={800} height={520} className="mx-auto h-auto w-full max-w-[500px]" />
               </div>
               <div className="mx-6 h-px bg-sky-400/25" />
               <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6">
@@ -966,3 +967,4 @@ function ContactItem({ icon, title, subtitle, href }: { icon: React.ReactNode; t
     ? <a href={href} className="border-b md:border-r border-white/10 p-5 hover:bg-white/[0.04] transition">{body}</a>
     : <div className="border-b md:border-r border-white/10 p-5">{body}</div>;
 }
+```
