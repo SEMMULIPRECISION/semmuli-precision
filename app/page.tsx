@@ -1,4 +1,287 @@
-```
+ChatGPT Plus
+
+
+
+
+
+615aa230-f6af-46ec-aae5-7530579564f9.png
+
+5773435a-0dc6-4cf1-9710-1f69d2b80ad5.png
+
+0154db14-ecf8-4f45-a75f-e743a6a1bb28.png
+
+
+Pasted text.txt
+Document
+CORRIGELO CON LOS CAMBIOS QUE ME SUGERISTE ANTERIORMENTE PARA HACERLO VER DE MANERA MAS PROFESIONAL EN INGLES, LAS CORRECCIONES TAMBIEN DE CERTIFICADOS TIPO ISO 
+
+3d697fa7-7c2e-426c-ada1-407a41708912.png
+ahora se ve asi github 
+
+702c9d7a-0c1d-4227-ba58-642e273ebec6.png
+estoy aqui pero sigue sin reconocerme como un creador 
+
+51b8a65d-ebec-481f-9798-1441688b360e.png
+ ESTO APARECIO EN COMMIT CHANGE EN GLOBAL.CSS
+
+4da83f26-2e74-49b5-aa06-3e680f211f47.png
+
+10b2e4c7-f3ae-4fad-be31-3409367f92dc.png
+
+segundo LOGO_SEMMULI.jpg
+
+Generated image: Semmuli Precision Brand Identity System
+
+Edit
+
+
+b2575ef0-66b7-4817-bfb8-1d9d66e5afba.png
+quita el punto seleccionado rojo, la variante negra con fondos claros para logo en facturas impresas me gusta, me gusta el logo en la parte superior como lo generaste, el fondo oscuro letras blancas no me parece ayudame a generar algo diferente 
+
+Generated image: Semmuli Precision Branding Board
+
+
+Edit
+
+
+Generated image: Semmuli Precision Brand Identity Board
+
+
+Edit
+
+
+
+Pasted markdown.md
+File
+ agregalo todo aqui entonces 
+
+Edited image
+fdb21b1d-9630-4a67-83b1-ed1057f78583.png
+quiero esta que tu creaste 
+
+Generated image: Semmuli Precision Manufacturing Homepage
+
+
+Edit
+
+
+Generated image: Precision Manufacturing Built for Industry
+
+
+Edit
+
+
+
+Pasted text(2).txt
+Document
+ahora genera los tadots para crearla  asi y mete todo aqui, añade las imagenes 
+
+Worked for 26s
+Listo. Ya te dejé todo integrado en un solo paquete para que la página quede mucho más cercana al diseño que aprobaste, manteniendo el selector bilingüe, las correcciones de calidad/ISO y la estructura existente. Tomé como base tu page.tsx actual. 
+
+
+Descargar paquete completo SEMMULI_WEB_READY.zip
+
+Dentro vienen page.tsx, globals.css, semmuli-logo.png, hero-cnc.jpg y un README-UPLOAD.txt con las instrucciones. También puedes bajar los archivos por separado: page.tsx, globals.css, semmuli-logo.png y hero-cnc.jpg.
+
+La nueva versión incluye el encabezado blanco con el logo horizontal, Hero oscuro con imagen CNC, Precision Manufacturing / Built for Industry, panel de capacidades, bloque de Precision / Innovation / Reliability / Quality, sección oscura de industrias y barra inferior con los dos teléfonos comerciales, correo, ubicación y botón Request a Quote. En español todo cambia automáticamente.
+
+Para subirlo, hazlo en este orden: primero public/semmuli-logo.png y public/hero-cnc.jpg; después reemplaza app/page.tsx; finalmente reemplaza app/globals.css. Usa un commit como Rebuild SEMMULI industrial homepage with bilingual hero and brand system. Vercel debería desplegarlo automáticamente. 
+
+
+
+
+
+
+
+
+Generated image
+
+Edit
+
+
+8d2f4133-bb51-4b8c-af57-80aba24f27df.png
+tengo estos archivos en public 
+
+
+Pasted markdown(1).md
+File
+agregalo a esto porfavor ya que no lo encuentro 
+
+a9a7b70d-2697-4b73-8965-167c3bf22ef3.png
+esta es la version que me aparece ahorita, como los corrijo 
+
+3688b2e7-514a-4d83-9437-3bc720a487e3.png
+tengo este problema 
+
+1c2dda01-e9f3-4394-89b1-fce693ad38c9.png
+no me aparece nada 
+
+a3ca3d83-fcc9-49b3-8ab2-b5bd5035aceb.png
+
+354a14be-5fc0-4377-8a34-99b02e493716.png
+3032abab-f828-44d4-9f4e-d617dffcec68.png
+
+7c7b17cf-6795-4629-bf27-51c4370a9125.png
+
+95f86500-7179-421b-b481-7b9bac44a890.png
+
+Entonces ya tenemos el diagnóstico exacto: tu editor de GitHub está correcto, pero Vercel todavía está publicando una versión anterior del page.tsx.
+
+Acabo de revisar directamente la página que está en producción. El sitio actual sigue intentando cargar:
+
+/semmuli-logo.png
+a través de Next.js:
+
+/_next/image?...url=%2Fsemmuli-logo.png...
+y Vercel responde 400 Bad Request. Por eso ves el icono de imagen rota. 
+
+Así que no sigas buscando semmuli-logo.png en el código. Si ya no existe ninguna coincidencia en main, el problema es que ese cambio todavía no es el deployment que está sirviendo producción.
+
+Haz ahora esto:
+
+En el page.tsx que tienes abierto en GitHub, arriba a la derecha pulsa Commit changes…
+
+Mensaje:
+Fix SEMMULI logo path
+
+Deja:
+Commit directly to the main branch
+
+Pulsa Commit changes.
+
+Después ve a Vercel → Deployments. El primer deployment de semmuli-precision debe aparecer con ese mensaje nuevo y finalmente cambiar a:
+
+● Ready — Production
+
+No abras todavía la página hasta que aparezca Ready.
+
+Cuando esté listo, entra a:
+
+semmuli-precision.vercel.app
+
+y haz:
+
+Ctrl + Shift + R
+
+Eso fuerza una recarga completa.
+
+Hay otra comprobación muy importante
+En Vercel, cuando aparezca el deployment nuevo, asegúrate de que la columna del proyecto diga:
+
+semmuli-precision
+
+porque tienes también el proyecto duplicado:
+
+semmuli-precision-main
+
+y no quiero que terminemos actualizando uno mientras estás visitando la URL del otro.
+
+En este momento, la página pública todavía está usando el código antiguo del logo. 
+
+Haz el Commit y mándame una captura de Vercel → Deployments. Ahí podremos ver exactamente cuál versión está en Production y resolverlo sin seguir modificando código innecesariamente.
+
+
+e6006bcf-3cc8-4a40-b82d-e478044fa0f4.png
+
+Ahí está el problema. La captura lo confirma claramente: los últimos tres cambios de page.tsx están fallando en Vercel.
+
+Por eso no ves las correcciones del logo. Vercel sigue mostrando el último deployment que sí compiló correctamente, que es Add files via upload — Ready.
+
+No cambiemos nada más del código todavía.
+
+Haz clic en el primer Update page.tsx que dice Error 6s (commit 98f7de9).
+
+Se abrirá el detalle del deployment. Busca la sección Build Logs o el mensaje rojo del error.
+
+Ahí probablemente veremos algo parecido a:
+
+Failed to compile
+o:
+
+Type error
+con el archivo y número de línea:
+
+./app/page.tsx:XXX:XX
+Mándame una captura de ese error completo. Con esa información corregimos exactamente la línea que impide el deployment.
+
+Lo importante es que ya sabemos que el problema del logo es consecuencia de que tus cambios nuevos nunca llegaron a producción, no de que el PNG esté mal. No necesitamos seguir modificando rutas de imágenes hasta solucionar primero el error de compilación.
+
+
+14:29:51.193
+ 
+Failed to compile.
+14:29:51.194
+ 
+14:29:51.195
+ 
+./app/page.tsx
+14:29:51.197
+ 
+Error:
+14:29:51.197
+ 
+x Expected ';', '}' or <eof>
+14:29:51.197
+ 
+,-[/vercel/path0/app/page.tsx:1:1]
+14:29:51.198
+ 
+1 | ,-> ```
+14:29:51.198
+ 
+2 | | "use client";
+14:29:51.198
+ 
+3 | |
+14:29:51.198
+ 
+4 | | import Image from "next/image";
+
+
+Ya encontramos el error exacto.
+
+Vercel está fallando porque en tu page.tsx quedó pegada literalmente esta línea al inicio:
+
+
+Eso es un marcador de Markdown, **no código TypeScript**, y por eso Vercel marca:
+
+`Expected ';', '}' or <eof>`
+
+También normalmente queda otro:
+
+```text
+
+al final del archivo.
+
+Tu `page.tsx` debe empezar directamente con:
+
+```tsx
+"use client";
+y terminar con la última llave } del código, sin ningún ``` antes ni después.
+
+Ya te limpié el archivo completo y además dejé corregida la ruta del logo para usar:
+
+/logo-semmuli-horizontal.png
+Puedes usar este archivo directamente:
+
+Descargar page-clean-no-fences.tsx
+
+En GitHub haz app → page.tsx → Edit, selecciona todo con Ctrl + A, bórralo y pega únicamente el contenido del archivo limpio. Después haz Commit directly to main.
+
+El primer renglón debe verse exactamente:
+
+"use client";
+Después del commit, Vercel debería volver a compilar. Si aparece otro error, ya será uno distinto y mucho más fácil de corregir. 
+
+
+
+
+Library
+/
+page-clean-no-fences.tsx
+
+
 "use client";
 
 import Image from "next/image";
@@ -35,7 +318,7 @@ import {
   MapPinned,
 } from "lucide-react";
 
-type Language = "en" | "es";  
+type Language = "en" | "es";
 
 type PortfolioItem = {
   image: string;
@@ -416,15 +699,7 @@ export default function Page() {
 
         <div className="relative z-10 w-full max-w-3xl text-center">
           <div className="mx-auto max-w-xl rounded-3xl border border-sky-500/30 bg-[#031426]/90 p-6 shadow-2xl backdrop-blur">
-          <Image
-  src="/logo-semmuli-horizontal.png"
-  alt="SEMMULI Precision"
-  width={900}
-  height={300}
-  priority
-  unoptimized
-  className="mx-auto h-auto w-full max-w-md object-contain"
-/>
+            <Image src="/logo-semmuli-horizontal.png" alt="SEMMULI Precision" width={900} height={600} priority className="mx-auto h-auto w-full max-w-md" />
           </div>
 
           <p className="mt-8 text-xs md:text-sm tracking-[0.28em] text-sky-400 font-bold">
@@ -469,7 +744,7 @@ export default function Page() {
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex min-h-[88px] max-w-[1500px] items-center justify-between px-5 md:px-10">
           <a href="#home">
-            <Image src="/logo-semmuli-horizontal.png" alt="SEMMULI Precision" width={430} height={260} priority unoptimized className="h-[72px] w-auto object-contain" />
+            <Image src="/logo-semmuli-horizontal.png" alt="SEMMULI Precision" width={430} height={260} priority className="h-[72px] w-auto object-contain" />
           </a>
 
           <nav className="hidden xl:flex items-center gap-8 text-sm font-bold">
@@ -543,7 +818,7 @@ export default function Page() {
           <div className="relative z-10 lg:ml-auto w-full max-w-2xl">
             <div className="rounded-3xl border border-sky-400/35 bg-[#021326]/90 shadow-2xl backdrop-blur overflow-hidden">
               <div className="px-7 pt-6 pb-5">
-                <Image src="/logo-semmuli-horizontal.png" alt="SEMMULI Precision" width={800} height={520} unoptimized className="mx-auto h-auto w-full max-w-[500px]" />
+                <Image src="/logo-semmuli-horizontal.png" alt="SEMMULI Precision" width={800} height={520} className="mx-auto h-auto w-full max-w-[500px]" />
               </div>
               <div className="mx-6 h-px bg-sky-400/25" />
               <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6">
@@ -975,4 +1250,3 @@ function ContactItem({ icon, title, subtitle, href }: { icon: React.ReactNode; t
     ? <a href={href} className="border-b md:border-r border-white/10 p-5 hover:bg-white/[0.04] transition">{body}</a>
     : <div className="border-b md:border-r border-white/10 p-5">{body}</div>;
 }
-```
