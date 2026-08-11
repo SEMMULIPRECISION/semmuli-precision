@@ -858,8 +858,7 @@ export default function Page() {
       {/* CONTACT */}
       <section id="contact" className="bg-[#020b18] text-white border-t border-white/10">
         <div className="mx-auto grid max-w-[1500px] md:grid-cols-2 xl:grid-cols-[1fr_1fr_1.1fr_1.45fr_auto]">
-          <ContactItem icon={<Phone className="h-7 w-7" />} title="+52 656 360 3600" subtitle={t.contact.commercial1} href="tel:+526563603600" />
-          <ContactItem icon={<Phone className="h-7 w-7" />} title="+52 656 329 0226" subtitle={t.contact.commercial2} href="tel:+526563290226" />
+          <ContactItem icon={<Phone className="h-7 w-7" />} title="+52 656 329 0226" subtitle={t.contact.commercial1} href="tel:+526563290226" />
           <ContactItem icon={<Mail className="h-7 w-7" />} title="semmuli@outlook.es" subtitle={t.contact.rfq} href="mailto:semmuli@outlook.es" />
           <ContactItem icon={<MapPin className="h-7 w-7" />} title={t.contact.location} subtitle={t.contact.shipping} />
           <div className="flex items-center justify-center p-5">
