@@ -49,7 +49,7 @@ type PortfolioItem = {
 
 const portfolioItems: PortfolioItem[] = [
   {
-    image: "/portfolio/cnc-milling-01.jpg",
+    image: "/cnc-milling-01.jpg",
     titleEn: "Precision CNC Machined Component",
     titleEs: "Componente Maquinado CNC de Precisión",
     processEn: "3-Axis CNC Milling",
@@ -61,7 +61,7 @@ const portfolioItems: PortfolioItem[] = [
       "Ejemplo de componente fabricado desde dibujo del cliente con inspección dimensional.",
   },
   {
-    image: "/portfolio/cnc-turning-01.jpg",
+    image: "/cnc-turning-01.jpg",
     titleEn: "Precision Turned Component",
     titleEs: "Componente Torneado de Precisión",
     processEn: "CNC Turning",
@@ -73,7 +73,7 @@ const portfolioItems: PortfolioItem[] = [
       "Componente torneado con diámetros críticos, hombros y características roscadas.",
   },
   {
-    image: "/portfolio/wire-edm-01.jpg",
+    image: "/wire-edm-01.jpg",
     titleEn: "Wire EDM Profile",
     titleEs: "Perfil por Wire EDM",
     processEn: "Wire EDM",
@@ -85,7 +85,7 @@ const portfolioItems: PortfolioItem[] = [
       "Perfil de precisión cortado por Wire EDM para herramental endurecido y geometría compleja.",
   },
   {
-    image: "/portfolio/sinker-edm-01.jpg",
+    image: "/sinker-edm-01.jpg",
     titleEn: "EDM Cavity Detail",
     titleEs: "Detalle de Cavidad EDM",
     processEn: "Sinker EDM",
@@ -97,7 +97,7 @@ const portfolioItems: PortfolioItem[] = [
       "Trabajo EDM de cavidad y detalle fino para herramentales, moldes y troqueles.",
   },
   {
-    image: "/portfolio/grinding-01.jpg",
+    image: "/grinding-01.jpg",
     titleEn: "Precision Ground Surface",
     titleEs: "Superficie Rectificada de Precisión",
     processEn: "Precision Grinding",
@@ -109,7 +109,7 @@ const portfolioItems: PortfolioItem[] = [
       "Operación de rectificado para controlar planitud, dimensión y condición superficial final.",
   },
   {
-    image: "/portfolio/tooling-01.jpg",
+    image: "/tooling-01.jpg",
     titleEn: "Custom Tooling & Fixture",
     titleEs: "Herramental y Fixture Especial",
     processEn: "Tooling & Fixtures",
